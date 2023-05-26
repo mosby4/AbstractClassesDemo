@@ -10,7 +10,7 @@ namespace ConsoleUI
 
 		public override void DriveAbstract()
 		{
-			Console.WriteLine($"This ");
+			Console.WriteLine($"This motorcycle is ready to go! ZOOOM!!! ");
 		}
 	}
 }

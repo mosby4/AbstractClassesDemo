@@ -16,20 +16,9 @@ namespace ConsoleUI
 
             #region Vehicles
 
-            /*
-             * Create an abstract class called Vehicle
-             * The vehicle class shall have three string properties Year, Make, and Model
-             * Set the defaults to something generic in the Vehicle class
-             * Vehicle shall have an abstract method called DriveAbstract with no implementation
-             * Vehicle shall have a virtual method called DriveVirtual with a base implementation.
-             */
+            
 
-            /* 
-             * Now create 2 non-abstract classes: Car and Motorcycle, that inherit from Vehicle
-             * Add a distict property in the 2 derived classes such as HasTrunk for Car and HasSideCart for Motorcycle
-             * Provide the implementations for the abstract methods
-             * Only in the Motorcycle class will you override the virtual drive method
-            */
+          
 
             // Create a list of Vehicle called vehicles
             var vehicle = new List<Vehicle>();
@@ -46,12 +35,22 @@ namespace ConsoleUI
              * Add the 4 vehicles to the list
              * Using a foreach loop iterate over each of the properties
              */
-            vehicle.Add();
-            vehicle.Add();
+            vehicle.Add(RS200 );
+            vehicle.Add(PanigaleV4R );
+            vehicle.Add(Rav4 );
+            vehicle.Add(Jetta );
+
+            foreach (var Car in vehicle )
+            {
+                Console.WriteLine($"{Car.year }, {Car.make }, {Car.model }");
+                Car.DriveAbstract();
+                Console.WriteLine("_____________________");
+                Console.WriteLine();
+            }
             // Call each of the drive methods for one car and one motorcycle
 
             #endregion            
-            Console.ReadLine();
+           
         }
     }
 }
